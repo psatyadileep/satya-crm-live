@@ -11,3 +11,4 @@ tzdata==2023.3
 virtualenv==20.21.0
 virtualenv-clone==0.5.7
 python-decouple==3.5
+django-storages==1.14
