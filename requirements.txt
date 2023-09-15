@@ -1,5 +1,4 @@
 ﻿asgiref==3.7.2
-certifi==2022.12.7
 distlib==0.3.6
 backcall==0.2.0
 boto3==1.28.47
