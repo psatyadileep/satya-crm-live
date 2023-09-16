@@ -28,7 +28,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["salty-gorilla-dss0roo9l6lk6qy16apeidd4.herokudns.com","localhost","127.0.0.1"]
+ALLOWED_HOSTS = ["satya-django-crm-34073f19ca6f.herokuapp.com","localhost","127.0.0.1"]
 
 
 # Application definition
