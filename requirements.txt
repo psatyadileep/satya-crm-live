@@ -49,3 +49,4 @@ tzdata==2023.3
 virtualenv==20.21.0
 virtualenv-clone==0.5.7
 python-decouple==3.8
+dj-database-url==2.1.0
