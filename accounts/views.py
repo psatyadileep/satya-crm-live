@@ -199,16 +199,13 @@ def deleteOrder(request,pk):
 @login_required(login_url='login')
 @allowed_users(allowed_roles=['admin'])
 def updateCustomer(request, pk):
-    form = CustomerForm()  # Initialize form here
-
+     # Initialize form here
     try:
         customer = Customer.objects.get(id=pk)
     except Customer.DoesNotExist:
         print(f"Customer with id {pk} does not exist.")
         return HttpResponse("Customer not found", status=404)
-    
-    if customer.profile_pic:
-        print(f"Profile Picture URL: {customer.profile_pic.url}")
+    form = CustomerForm(instance=customer)
 
     if request.method == "POST":
         form = CustomerForm(request.POST, request.FILES, instance=customer)
