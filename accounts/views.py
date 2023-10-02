@@ -168,13 +168,13 @@ def updateOrder(request, pk):
       # print(request.POST)
       form = OrderForm(request.POST, instance=order)
 
-      if form.isvalid():
+      if form.is_valid():
           form.save()
           return redirect("/")
 
     context = {"form":form}
 
-    return render(request,"accounts/order_form.html",context) 
+    return render(request,"accounts/update_form.html",context)
 
 
 
